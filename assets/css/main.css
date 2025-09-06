@@ -281,12 +281,12 @@ a:hover {
 }
 
 .navbar-logo-container {
-    display: flex;
-    align-items: center;
-    height: 75px;
-    @media (max-width: 840px) {
-      height: 60px;
-    }
+  display: flex;
+  align-items: center;
+  height: 75px;
+  @media (max-width: 840px) {
+    height: 60px;
+  }
 }
 
 .brand-name {
@@ -527,16 +527,18 @@ section:last-of-type {
 
 section .container-fluid {
   max-width: 980px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 section .headline {
   line-height: 1.4em;
 
-  margin-top: 0;
-  margin-bottom: 0.9em;
+  margin: 0 auto 0.9em;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   section .headline br {
     display: none;
   }
@@ -738,8 +740,19 @@ section .headline {
 /** 8. Section --> Service
 *******************************************************************/
 
+/* #service .container-fluid.text-center {
+  display: flex;
+} */
+
 #service .service-item {
   margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 
 #service .service-item i {
@@ -762,6 +775,8 @@ section .headline {
   display: inline-block;
 
   vertical-align: middle;
+  /* text-decoration: underline;
+  text-decoration-color: #3f7c76; */
 }
 
 #service .service-item p {
@@ -774,6 +789,12 @@ section .headline {
     text-align: center !important;
   }
 }
+
+/* @media (min-width: 280px) {
+  #service .container-fluid .text-center .col-md-4 .col-sm-6 .text-left .service-item .scroll-animated-from-bottom {
+    width: 100%;
+  }
+} */
 
 /** 9. Section --> Partners
 *******************************************************************/
