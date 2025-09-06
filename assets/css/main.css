@@ -13,7 +13,7 @@
     --  06. Section --> Intro
     --  07. Section --> About
     --  08. Section --> Service
-    --  09. Section --> Work
+    --  09. Section --> Partners
     --  10. Section --> Clients
     --  11. Section --> Contact
     --  12. Section --> Footer
@@ -775,7 +775,7 @@ section .headline {
   }
 }
 
-/** 9. Section --> Work
+/** 9. Section --> Partners
 *******************************************************************/
 
 #partners .partners-carousel {
