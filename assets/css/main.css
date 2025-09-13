@@ -360,6 +360,10 @@ a:hover {
   .navbar-header {
     padding: 0 24px;
   }
+
+  .navbar-header button i {
+    color: #3f7c76
+  }
 }
 
 @media (min-width: 841px) {
