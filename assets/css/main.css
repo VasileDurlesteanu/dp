@@ -78,7 +78,7 @@ h6 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.74em;
 
   letter-spacing: 0.02em;
@@ -695,6 +695,11 @@ section .headline {
 /** 7. Section --> About
 *******************************************************************/
 
+#about .container-fluid.text-center {
+  padding: 0;
+}
+
+
 #about .subline {
   max-width: 77%;
   margin: 0 auto 2em auto;
@@ -707,7 +712,8 @@ section .headline {
 
 #about .about-item img {
   margin-top: 1.8em;
-  width: 270px;
+  width: 278px;
+  /* width: 27.866rem; */
   height: 178px;
   object-fit: cover;
 }
@@ -733,6 +739,7 @@ section .headline {
     margin-right: auto;
     margin-left: auto;
 
+    font-size: 2.28rem;
     text-align: center;
   }
 }
