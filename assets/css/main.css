@@ -814,11 +814,15 @@ section .headline {
   height: 550px;
 }
 
+#partners .container-fluid.text-center {
+  justify-content: center;
+}
+
 #partners .partners-flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* center the row */
-  gap: 2rem; /* spacing between items */
+  gap: 1rem;
 }
 
 /* Desktop: 4 in a row */
@@ -830,7 +834,7 @@ section .headline {
   }
 }
 
-/* Mobile: 2x2 matrix */
+/* Mobile*/
 @media (max-width: 768px) {
   #partners {
     height: auto;
@@ -840,79 +844,27 @@ section .headline {
     /* flex: 0 1 45%; */
     max-width: 250px;
   }
+
+
+  /* NEED TO ADJUST HERE PROPERLY ON TABLET SIZE */
+  #partners .partner img {
+    width: 100%;
+  }
 }
 
 #partners .partner img {
-  width: 100%;
-  height: auto;
+  height: 100px;
+  min-width: 178px;
+  /* width: auto; */
+  object-fit: contain;
   display: block;
+  margin: 0 auto;
   transition: transform 0.3s ease;
 }
 
 #partners .partner:hover img {
   transform: scale(1.05);
 }
-
-/* #partners .partners-carousel .item .info {
-  position: absolute;
-  z-index: -4;
-  top: 0;
-  left: 0;
-
-  display: block;
-
-  width: 100%;
-  height: 100%;
-
-  -webkit-transition: 0.4s ease;
-  -o-transition: 0.4s ease;
-  transition: 0.4s ease;
-  pointer-events: none;
-
-  opacity: 1;
-  /* background: rgba(10, 10, 10, 0.6); */
-/* } */
-
-/* #partners .partners-carousel .item:hover .info {
-  z-index: 2;
-
-  pointer-events: all;
-
-  opacity: 1;
-}
-
-#partners .partners-carousel .item .info .container-mid {
-  position: absolute;
-  top: 50%;
-  left: 0;
-
-  width: 100%;
-
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  text-align: center;
-}
-
-#partners .partners-carousel .item .info .container-mid h5 {
-  -webkit-transform: translateX(2rem);
-  -ms-transform: translateX(2rem);
-  transform: translateX(2rem);
-
-  opacity: 0;
-  color: #fff;
-} */
-
-/* #partners .partners-carousel .item:hover .info .container-mid h5 {
-  -webkit-transition: 0.2s ease 0.1s;
-  -o-transition: 0.2s ease 0.1s;
-  transition: 0.2s ease 0.1s;
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
-
-  opacity: 1;
-} */
 
 #partners .partners-carousel .item .info .container-mid i {
   font-size: 2rem;
