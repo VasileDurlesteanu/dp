@@ -4,6 +4,24 @@ jQuery(window).on("load", function () {
   // HIDE PRELOADER
   $(".preloader").addClass("hide-preloader");
 
+  // Initialize translations
+  TranslationManager.init().then(() => {
+    // SHOW/ANIMATE ANIMATION CONTAINER
+    setTimeout(function () {
+      $("#intro .animation-container").each(function () {
+        var e = $(this);
+
+        setTimeout(function () {
+          e.addClass("run-animation");
+        }, e.data("animation-delay"));
+      });
+    }, 800);
+  });
+});
+
+jQuery(window).on("resize", function () {
+  "use strict";
+
   // SHOW/ANIMATE ANIMATION CONTAINER
   setTimeout(function () {
     $("#intro .animation-container").each(function () {
@@ -89,5 +107,16 @@ jQuery(document).ready(function ($) {
       // Bootstrap 4+
       $navbar.collapse("hide");
     }
+  });
+
+  // Language switch handlers
+  $("#lang-en").on("click", function (e) {
+    e.preventDefault();
+    TranslationManager.setLanguage("en");
+  });
+
+  $("#lang-ro").on("click", function (e) {
+    e.preventDefault();
+    TranslationManager.setLanguage("ro");
   });
 });

@@ -69,12 +69,19 @@
         <div id="navbar" class="navbar-collapse collapse">
           <!-- MENU ITEMS LIST -->
           <ul class="navigation-items nav navbar-nav navbar-right">
-            <li class="current"><a href="#intro">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#partners">Partners</a></li>
-            <!-- <li><a href="#clients">Clients</a></li> -->
-            <li><a href="#footer">Contact</a></li>
+            <li class="current">
+              <a href="#intro" data-key="menu_home">Home</a>
+            </li>
+            <li><a href="#about" data-key="menu_about">About</a></li>
+            <li><a href="#service" data-key="menu_services">Services</a></li>
+            <li><a href="#partners" data-key="menu_partners">Partners</a></li>
+            <li><a href="#footer" data-key="menu_contact" id="contact">Contact</a></li>
+            <!-- Language Switch -->
+            <!-- <li id="lang-switch">
+              <a href="#lang-en" id="lang-en">EN</a> | <a href="#lang-ro" id="lang-ro">RO</a>
+            </li> -->
+            <li><a href="#lang-en" id="lang-en">ENGLISH</a></li>
+            <li><a href="#lang-ro" id="lang-ro">ROMÂNĂ</a></li>
           </ul>
           <!-- /MENU ITEMS LIST -->
         </div>
@@ -100,7 +107,7 @@
         <br /> 
         <p class="subline">Court representation.</p>
         <br />  -->
-        <p class="subline">
+        <p class="subline" data-key="intro_tagline">
           Legal consulting<span class="dot">.</span> Mediation<span class="dot"
             >.</span
           >
@@ -114,7 +121,7 @@
         <!-- <p class="subline">We specialize in supporting foreign investors <br/> and international enterprises.</p>
         <br />  -->
         <br />
-        <p class="subline">
+        <p class="subline" data-key="intro_subline">
           Trusted legal support for <br />
           international businesses and enterprises<span class="dot">.</span>
         </p>
@@ -127,11 +134,11 @@
     <section id="about" class="white">
       <!-- CONTAINER FLUID -->
       <div class="container-fluid text-center">
-        <h3 class="headline scroll-animated-from-bottom">
+        <h3 class="headline scroll-animated-from-bottom" data-key="about_headline">
           Your trusted legal partner.
         </h3>
 
-        <p class="subline scroll-animated-from-bottom">
+        <p class="subline scroll-animated-from-bottom" data-key="about_text">
           We help foreign investors and multinational corporations navigate the
           Moldovan market with confidence. <br />
           Since 2001, our firm has provided sophisticated legal counsel designed
@@ -146,7 +153,7 @@
             src="assets/img/about/about-1.jpg"
             alt="image"
           />
-          <p>
+          <p data-key="about_text_1">
             <!-- We believe avoiding litigation is the best way to solve a dispute.
             Our focus on mediation and proactive counsel saves you time, costs,
             and stress, turning potential conflicts into successful outcomes. -->
@@ -166,7 +173,7 @@
             src="assets/img/about/about-2.jpg"
             alt="image"
           />
-          <p>
+          <p data-key="about_text_2">
             <!-- Your Bridge to Eastern Markets With multilingual lawyers and 24+
             years of experience, we connect international investors to
             opportunities in Moldova, Ukraine, and Romania, guiding you through
@@ -188,7 +195,7 @@
             src="assets/img/about/about-3.jpg"
             alt="image"
           />
-          <p>
+          <p data-key="about_text_3">
             Our licensed lawyers have a proven record of success across civil,
             arbitration, administrative, and criminal courts. We are known for
             tenaciously defending our clients' interests.
@@ -204,7 +211,7 @@
     <section id="service">
       <!-- CONTAINER FLUID -->
       <div class="container-fluid text-center">
-        <h3 class="headline scroll-animated-from-bottom">
+        <h3 class="headline scroll-animated-from-bottom" data-key="service_headline">
           From complex challenges <br />
           to clear legal solutions.
         </h3>
@@ -214,9 +221,9 @@
           class="col-md-4 col-sm-6 text-left service-item scroll-animated-from-bottom"
         >
           <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <h5>Legal Audit & Risk Management</h5>
+          <h5 data-key="service_headline_1">Legal Audit & Risk Management</h5>
 
-          <p>
+          <p data-key="service_text_1">
             Comprehensive audits to identify risks and provide strategies for
             prevention and protection.
           </p>
@@ -228,9 +235,9 @@
           class="col-md-4 col-sm-6 text-left service-item scroll-animated-from-bottom"
         >
           <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-          <h5>Investment & Business Structuring</h5>
+          <h5 data-key="service_headline_2">Investment & Business Structuring</h5>
 
-          <p>
+          <p data-key="service_text_2">
             Guidance on choosing the right legal form to launch or grow your
             business successfully.
           </p>
@@ -242,9 +249,9 @@
           class="col-md-4 col-sm-6 text-left service-item scroll-animated-from-bottom"
         >
           <i class="fa fa-file-text" aria-hidden="true"></i>
-          <h5>Contract Drafting & Negotiation</h5>
+          <h5 data-key="service_headline_3">Contract Drafting & Negotiation</h5>
 
-          <p>
+          <p data-key="service_text_3">
             Support in drafting, reviewing, and negotiating contracts while
             minimizing risks.
           </p>
@@ -256,9 +263,9 @@
           class="col-md-4 col-sm-6 text-left service-item scroll-animated-from-bottom"
         >
           <i class="fa fa-gavel" aria-hidden="true"></i>
-          <h5>Litigation & Mediation</h5>
+          <h5 data-key="service_headline_4">Litigation & Mediation</h5>
 
-          <p>
+          <p data-key="service_text_4">
             Resolution of disputes through mediation, arbitration, and full
             legal representation in court.
           </p>
@@ -270,9 +277,9 @@
           class="col-md-4 col-sm-6 text-left service-item scroll-animated-from-bottom"
         >
           <i class="fa fa-building" aria-hidden="true"></i>
-          <h5>Company Formation & Registration</h5>
+          <h5 data-key="service_headline_5">Company Formation & Registration</h5>
 
-          <p>
+          <p data-key="service_text_5">
             Assistance with setting up companies, non-profits, and ongoing legal
             compliance.
           </p>
@@ -284,9 +291,9 @@
           class="col-md-4 col-sm-6 text-left service-item scroll-animated-from-bottom"
         >
           <i class="fa fa-file" aria-hidden="true"></i>
-          <h5>Licensing & Regulatory Approvals</h5>
+          <h5 data-key="service_headline_6">Licensing & Regulatory Approvals</h5>
 
-          <p>
+          <p data-key="service_text_6">
             Support in obtaining essential licenses, permits, and
             authorizations.
           </p>
@@ -298,9 +305,9 @@
           class="col-md-4 col-sm-6 text-left service-item scroll-animated-from-bottom"
         >
           <i class="fa fa-institution" aria-hidden="true"></i>
-          <h5>Public Institution Relations</h5>
+          <h5 data-key="service_headline_7">Public Institution Relations</h5>
 
-          <p>
+          <p data-key="service_text_7">
             Legal assistance in dealings with public authorities and regulatory
             bodies.
           </p>
@@ -312,9 +319,9 @@
           class="col-md-4 col-sm-6 text-left service-item scroll-animated-from-bottom"
         >
           <i class="fa fa-briefcase" aria-hidden="true"></i>
-          <h5>Public Procurement Advisory</h5>
+          <h5 data-key="service_headline_8">Public Procurement Advisory</h5>
 
-          <p>
+          <p data-key="service_text_8">
             Expert guidance on public procurement, including donor-funded
             projects.
           </p>
@@ -326,9 +333,9 @@
           class="col-md-4 col-sm-6 text-left service-item scroll-animated-from-bottom"
         >
           <i class="fa fa-compress" aria-hidden="true"></i>
-          <h5>Mergers, Acquisitions & Due Diligence</h5>
+          <h5 data-key="service_headline_9">Mergers, Acquisitions & Due Diligence</h5>
 
-          <p>
+          <p data-key="service_text_9">
             Preparation of legal due diligence and reports for investments,
             privatizations, and mergers.
           </p>
@@ -342,7 +349,7 @@
     <!-- Partners -->
     <section id="partners" class="white">
       <div class="container-fluid text-center">
-        <h3 class="headline scroll-animated-from-bottom">
+        <h3 data-key="partners_headline" class="headline scroll-animated-from-bottom">
           Our legal international partners.
         </h3>
 
@@ -437,6 +444,7 @@
 
     <!-- JAVASCRIPTS -->
     <script type="text/javascript" src="assets/js/plugins.js"></script>
+    <script type="text/javascript" src="assets/js/translations.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
   </body>
 </html>
